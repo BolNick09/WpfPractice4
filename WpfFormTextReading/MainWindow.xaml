@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfFormTextReading.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFormTextReading"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="76" Width="331">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="156*"/>
+            <ColumnDefinition Width="401*"/>
+            <ColumnDefinition Width="85*"/>
+        </Grid.ColumnDefinitions>
+        <ProgressBar x:Name="pgCopyProgress1" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" VerticalAlignment="Top" Width="188" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnRead" Content="Прочитать" HorizontalAlignment="Left" Margin="123,10,0,0" VerticalAlignment="Top" Width="74" Grid.Column="1" Height="20" Click="btnRead_Click"/>
+
+    </Grid>
+</Window>
